@@ -1,5 +1,10 @@
+const inquirer = require('inquirer');
+const fs = require('fs');
+
+
 // Questions for the user
-const questions = [
+inquirer
+    .prompt([
     {
         type: 'input',
         message: 'What is your project title?',
@@ -65,4 +70,7 @@ const questions = [
         message:'what is your email address?',
         name: 'email',
     },
-]
+])
+    .then((Response)=>{
+        
+    })
