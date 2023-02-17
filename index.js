@@ -71,6 +71,8 @@ inquirer
         name: 'email',
     },
 ])
-    .then((Response)=>{
-        
-    })
+.then((response) => {
+
+    fs.writeFile('readme-demo.md',`title is: ${response.title}`,(err) =>
+    err ? console.error(err) : console.log('readme.md generated'));
+})
