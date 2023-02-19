@@ -57,7 +57,6 @@ const licenses = [
     url: "https://unlicense.org/",
   },
 ];
-console.log(licenses.name)
 
 // Questions for the user
 inquirer
@@ -132,22 +131,23 @@ inquirer
 
 //we have our responses and license, we can generate the ms file
 
-    fs.writeFile('readme-demo.md',`title is: ${response.title}`,(err) =>
+    fs.writeFile('readme-demo.md',generateReadme(),(err) =>
     err ? console.error(err) : console.log('readme.md generated'));
 })
 
-const link = "";
-function generateReadme(response){
+function generateReadme(response) {
+  let link = "";
   //loop to display the chosen licnese
-  for (let i = 0; i <= licenses.length; i++){
-    if (response.licence === licenses[i].name){
+  for (let i = 0; i < licenses.length; i++){
+    if (response.choices === licenses[i].name){
       link = licenses[i].url;
   }
 }
-return `# ${response.title} ![GitHub license](https://img.shields.io/badge/license-${response.licence}-blue.svg)
+`# ${response.title} ![GitHub license](https://img.shields.io/badge/license-${response.licence}-blue.svg)
 
 ##Description
 ${response.description}
+
 
 ##table of contenet
 
@@ -157,4 +157,33 @@ ${response.description}
 *[Credits](#credits)
 *[Test](#test)
 *[Question](#installation)
+
+
+## Installation
+${response.installation}
+
+
+## Usage 
+${response.usage}
+
+
+## License
+Copyright (c) [2020]
+The license is ${response.license}. 
+Read more about it at ${licenseLink}.
+
+
+## Credits
+${response.credits}
+
+
+## Tests
+${response.tests}
+
+
+## Questions
+If you have any additional questions please contact me at ${response.email}.
+GitHub: https://github.com/${response.github}
+`;
 }
+
