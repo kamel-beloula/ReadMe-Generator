@@ -146,4 +146,15 @@ function generateReadme(response){
 }
 return `# ${response.title} ![GitHub license](https://img.shields.io/badge/license-${response.licence}-blue.svg)
 
+##Description
+${response.description}
+
+##table of contenet
+
+*[Installation](#installation)
+*[Usage](#usage)
+*[Link to deployed app](#link to deployed app)
+*[Credits](#credits)
+*[Test](#test)
+*[Question](#installation)
 }
