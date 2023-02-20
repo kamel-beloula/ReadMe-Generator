@@ -43,7 +43,6 @@ const questions= [
         "MIT License", 
         "Apache License 2.0", 
         "GNU General Public License v3.0",
-        "Creative Commons Zero v1.0 Universal",
         "Mozilla Public License 2.0",
         "The Unilicense",
     ]
