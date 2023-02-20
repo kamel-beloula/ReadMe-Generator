@@ -40,12 +40,12 @@ const questions= [
     message: 'choose a license for your project:',
     name: 'license',
     choices: [
-        "MIT license", 
+        "MIT License", 
         "Apache License 2.0", 
         "GNU General Public License v3.0",
         "Creative Commons Zero v1.0 Universal",
         "Mozilla Public License 2.0",
-        "The Unlicense",
+        "The Unilicense",
     ]
 },
 {

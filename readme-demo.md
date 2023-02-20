@@ -44,7 +44,7 @@
   
   
   ## Questions
-  If you have any additional questions please contact me at/
+  If you have any additional questions please contact me at
   dfg.
   GitHub: https://github.com/dfg
   
