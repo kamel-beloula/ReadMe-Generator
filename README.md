@@ -31,6 +31,7 @@ In order to use this application. You must cd into the readme-generator resposit
 
 ## Link to deployed app
 
+Live website [here](https://kamel-beloula.github.io/ReadMe-Generator/). Since there is not index.html, the link displays the ReadMe file.
 
 
 ## License
