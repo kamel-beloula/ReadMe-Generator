@@ -30,13 +30,14 @@ inquirer.prompt(questions)
 .then((response) => {
 console.log(response.license)
 
+
   //https://www.codespeedy.com/how-to-replace-space-with-20-in-javascript/    
   let licenceName = response.license.replace(/ /g, "%20");
     
   // write the md coponents in the readme-test file
-  fs.writeFile('readme-test',
+  fs.writeFile('ReadMe-Test',
   
-  // display a badge for for the chosen license 
+  // display a badge for the chosen license 
   `![GitHub license](https://img.shields.io/badge/license-${licenceName}-blue.svg)
   
   
@@ -65,6 +66,10 @@ console.log(response.license)
   ## Usage 
   ${response.usage}
   
+
+  ## Link to deployed app
+  ${response.link}
+  
   
   ## Credits
   ${response.credits}
@@ -85,6 +90,6 @@ console.log(response.license)
   If you have any additional questions please contact me at ${response.email}.
   GitHub: https://github.com/${response.github}
   `,(err) =>
-  err ? console.error(err) : console.log('User\'s info logged!')
+  err ? console.error(err) : console.log('Readme file generated')
 )
 })
