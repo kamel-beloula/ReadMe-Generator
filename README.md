@@ -12,6 +12,7 @@ This application is designed to function as a ReadMe generator. The user utilize
 - [Installation](#installation)
 - [Usage](#usage)
 - [Link to deployed app](#link-to-deployed-app)
+- [Walkthrough video](#walkthrough-video)
 - [License](#license)
 - [Credits](#credits)
 - [Tests](#tests)
@@ -31,8 +32,10 @@ In order to use this application. You must cd into the readme-generator resposit
 
 ## Link to deployed app
 
-Live website [here](https://kamel-beloula.github.io/ReadMe-Generator/). Since there is not index.html, the link displays the ReadMe file.
+Live website [here](https://kamel-beloula.github.io/ReadMe-Generator/). Since there is no index.html, the link displays the ReadMe file.
 
+## Walkthrough video
+Video [link](https://youtu.be/vH-KlPLQr14)
 
 ## License
 

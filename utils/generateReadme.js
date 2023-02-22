@@ -1,4 +1,0 @@
-const licenses = require("./licenses")
-
-
-

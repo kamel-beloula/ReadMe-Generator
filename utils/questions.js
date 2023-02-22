@@ -33,7 +33,7 @@ const questions= [
 {
     type: 'input',
     message: 'Please provide test instructions for your project',
-    name:'test',
+    name:'tests',
 },
 {
     type: 'list',
